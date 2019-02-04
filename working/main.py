@@ -1,15 +1,6 @@
 import pyrebase
 
-config = {
 
-    "apiKey": "AIzaSyDDRmqllUVPYrwiBRutWB0pBVbAxE7v9SE",
-    "authDomain": "pythondev-229207.firebaseapp.com",
-    "databaseURL": "https://pythondev-229207.firebaseio.com",
-    "projectId": "pythondev-229207",
-    "storageBucket": "",
-    "messagingSenderId": "59631211876"
-  # once code is pasted change it into python dictionary format into " "
-}
 
 firebase = pyrebase.initialize_app(config)
 
