@@ -23,6 +23,7 @@ def login():
 # POST - Login values passed as a file from the browser to the flask server
 # GET - Login values passed in the URL from the browser to the flask server
 
+
 @app.route('/getting_logged', methods=['POST','GET'])
 def getting_logged():
     if request.method == "POST":
@@ -36,6 +37,13 @@ def getting_logged():
             return "Wrong credential"
     return "Something wrong"
 
+@app.route('/sign')
+def signin():
+    return render_template("signin.html")
+
+@app.route('/getting_signed', methods=['POST','GET'])
+def getting_signed():
+    if request.method == "POST":
 
 @app.route('/data/<val>')
 def data(val):
